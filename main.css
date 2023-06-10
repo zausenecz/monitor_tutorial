@@ -1,0 +1,77 @@
+:root {
+    counter-reset: list sublist;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: .5rem;
+    margin-inline: auto;
+}
+
+html {
+    font-size: 12px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+main {
+    width: min(80rem, 100% - 5rem);
+    margin-inline: auto;
+    margin-bottom: 5rem;
+}
+
+p {
+    text-align: justify;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 2em;
+    border-radius: .5rem;
+    display: inline-block;
+}
+
+h2::before {
+    counter-increment: list;
+    content: counter(list) ". ";
+}
+
+h2 {
+    counter-reset: sublist;
+}
+
+h3::before {
+    counter-increment: sublist;
+    content: counter(list) "."counter(sublist) ". ";
+}
+
+a {
+    color: #1877f4;
+    text-decoration: none;
+}
+
+span {
+    font-weight: 600;
+    letter-spacing: .4rem;
+    margin-left: .4rem;
+    text-transform: uppercase;
+}
+
+
+@keyframes select {
+    0% {
+        background: #ddd;
+    }
+}
+
+*:target {
+    animation: select 5s ease-out;
+}
