@@ -10,13 +10,11 @@ img {
 }
 
 html {
-    font-size: 12px;
     scroll-behavior: smooth;
 }
 
 body {
     font-family: system-ui;
-    line-height: 1.5;
     font-size: 1.5rem;
     margin: 0;
 }
