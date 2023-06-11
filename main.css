@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    width: min(80rem, 100% - 15rem);
+    width: min(80rem, 100% - 10rem);
     margin-inline: auto;
     margin-bottom: 5rem;
     font-size: 1.5rem;
