@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    width: min(80rem, 100% - 5rem);
+    width: min(80rem, 100% - 15rem);
     margin-inline: auto;
     margin-bottom: 5rem;
     font-size: 1.5rem;
@@ -40,7 +40,7 @@ h3 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 h2::before {
@@ -50,11 +50,11 @@ h2::before {
 
 h2 {
     counter-reset: sublist;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 1.75em;
 }
 
 
@@ -64,7 +64,7 @@ h3::before {
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 a {
